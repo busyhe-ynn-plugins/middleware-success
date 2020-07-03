@@ -1,0 +1,42 @@
+{
+  "name": "@busyhe/ynn-middleware-success",
+  "version": "0.0.1",
+  "description": "Ynn中间件用来包装成功的情况下返回的数据。",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --forceExit",
+    "tw": "npm run test-watch",
+    "test-watch": "jest --watch",
+    "test-cov": "jest --coverage --runInBand --forceExit --detectOpenHandles",
+    "lint": "eslint lib --cache --ignore-path .eslintignore",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+  },
+  "keywords": [
+    "middleware",
+    "common",
+    "success",
+    "ynn"
+  ],
+  "author": "LvChengbin <lvchengbin59@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "jest": "^26.1.0",
+    "pre-commit": "^1.2.2",
+    "ynn": "0.1.1"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.spec.js"
+    ],
+    "coverageReporters": [
+      "text-summary",
+      "text",
+      "lcov"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "testEnvironment": "node"
+  }
+}
